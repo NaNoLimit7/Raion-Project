@@ -38,7 +38,7 @@ fun AppScreen(
         }
         items(appList){ appEntity ->
             AppWidget(appEntity){
-            navController.navigate("appDetail/${appEntity.id}")
+            navController.navigate("app_screen/${appEntity.id}")
             }
         }
     }
