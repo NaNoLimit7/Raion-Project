@@ -37,14 +37,14 @@ import coil.compose.AsyncImage
 @Composable
 @Preview
 fun AppWidget(
-    appEntity1: AppEntity = AppObject.nike,
-    appEntity2: AppEntity = AppObject.aero,
+    appEntity: AppEntity = AppObject.nike,
+
     onClick: (appEntity: AppEntity) -> Unit = {}
 ){
     Row (modifier = Modifier
         .fillMaxWidth()
         .background(Color.White)
-        .height(270.dp)
+        .height(265.dp)
         .padding(8.dp),
         verticalAlignment = Alignment.Top
     )
@@ -63,53 +63,21 @@ fun AppWidget(
             ) {
                 Column (modifier = Modifier.fillMaxSize()) {
                     AsyncImage(
-                        model = appEntity1.imageURL,
-                        contentDescription = appEntity1.name,
+                        model = appEntity.imageURL,
+                        contentDescription = appEntity.name,
                         modifier = Modifier.fillMaxWidth().height(155.dp)
                     )
-                    Text(appEntity1.name,
+                    Text(appEntity.name,
                         fontWeight = FontWeight.Bold,
                         fontSize = 14.sp,
                         modifier = Modifier.padding(start = 8.dp)
                         )
 
-                    Text(appEntity1.rating.toString()+"  Stars",
+                    Text(appEntity.rating.toString()+"  Stars",
                         fontSize = 12.sp,
                         modifier = Modifier.padding(8.dp))
                 }
             }
-
-        }
-        Box (modifier = Modifier
-            .fillMaxHeight()
-            .padding(16.dp)
-        ){
-            Card(modifier = Modifier
-                .width(165.dp)
-                .height(245.dp),
-                elevation = CardDefaults.cardElevation(10.dp),
-                colors = CardDefaults.cardColors(
-                    containerColor = Color.White
-                )
-            ) {
-                Column (modifier = Modifier.fillMaxSize()) {
-                    AsyncImage(
-                        model = appEntity2.imageURL,
-                        contentDescription = appEntity2.name,
-                        modifier = Modifier.fillMaxWidth().height(155.dp)
-                    )
-                    Text(appEntity2.name,
-                        fontWeight = FontWeight.Bold,
-                        fontSize = 14.sp,
-                        modifier = Modifier.padding(start = 8.dp)
-                        )
-
-                    Text(appEntity2.rating.toString()+"  Stars",
-                        fontSize = 12.sp,
-                        modifier = Modifier.padding(8.dp))
-                }
-            }
-
         }
     }
 }
