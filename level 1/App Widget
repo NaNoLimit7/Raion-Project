@@ -80,7 +80,6 @@ fun AppWidget(
             }
 
         }
-        Spacer(modifier = Modifier.width(2.dp))
         Box (modifier = Modifier
             .fillMaxHeight()
             .padding(16.dp)
