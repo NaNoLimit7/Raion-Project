@@ -1,0 +1,58 @@
+package com.example.raionproject
+
+class AppEntity (
+    val id: String,
+    val name: String,
+    val rating: Double,
+    val imageURL: String,
+)
+object AppObject {
+    val nike = AppEntity(
+        id = "1",
+        name = "Nike Alpha Fly 3",
+        rating = 4.9,
+        imageURL = "https://images.tokopedia.net/img/cache/700/VqbcmM/2024/7/6/c9ffe943-6823-49e8-94e9-6729656a41d6.jpg"
+        )
+    val aero = AppEntity(
+        id = "2",
+        name = "Aerostreet T-Shirt",
+        rating = 4.9,
+        imageURL = "https://images.tokopedia.net/img/cache/700/VqbcmM/2024/1/22/c78bbb52-d6fc-4d7c-82cd-15d8e8a97a60.jpg"
+    )
+    val ip16 = AppEntity(
+        id = "3",
+        name = "Apple Iphone 16",
+        rating = 3.5,
+        imageURL = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq3ymE1ExHlb73XZz3h3_tifeza3YE4v5lKA&s"
+    )
+    val delson = AppEntity(
+        id = "4",
+        name = "Skechers Delson",
+        rating = 5.0,
+        imageURL = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJrqqA7dLuqoNpxmw7ZwQ52a4SG1RKCACj2w&s"
+    )
+    val loq = AppEntity(
+        id = "5",
+        name = "Lenovo LOQ-15ARP9",
+        rating = 4.8,
+        imageURL = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdj1gj6zfkr8qaq_IoskCYAao5upV1ndA59A&s"
+    )
+    val rog = AppEntity(
+        id = "6",
+        name = "Asus ROG Strix TKL",
+        rating = 4.9,
+        imageURL = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRopI5TBGOa_rd5nZp6IQqqultfTl6KAzxbeg&s"
+    )
+    val prada = AppEntity(
+        id = "7",
+        name = "Prada Chelsea Boots",
+        rating = 5.0,
+        imageURL = "https://retail.com.mt/cdn/shop/products/may_black_001-001-042_main_sq_wt_700x700_71d69429-f562-41b1-977e-427ec7e8ba2e_1200x1200.jpg?v=1705513093"
+    )
+    val logitech = AppEntity(
+        id = "8",
+        name = "Logitech g304",
+        rating = 4.8,
+        imageURL = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt1WfQnJ5Snc1QavQ_B87SKvnLqytJ09z8nw&s"
+    )
+}
